@@ -1,4 +1,5 @@
 .menu {
+    top: calc(50% - 30%);
     width: 20%;
     box-sizing: border-box;
     padding: 10px;
@@ -9,6 +10,8 @@
     right: 0;
     display: flex;
     flex-direction: column;
+    height: 60%;
+    justify-content: space-around;
 }
 
 .container {
@@ -42,4 +45,74 @@
     width: 300px;
     height: 200px;
     overflow: hidden;
+}
+
+.position {
+    height: 1500px;
+    display: flex;
+    margin: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.static {
+    position: static;
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.relative {
+    position: relative;
+    background-color: lightpink;
+    width: 100px;
+    height: 150px;
+    top: 200px;
+    left: 50px;
+    border: 1px solid black;
+}
+
+.absolute {
+    position: absolute;
+    background-color: lightcoral;
+    width: 170px;
+    height: 150px;
+    top: 100px;
+    left: 150px;
+    border: 1px solid black;
+}
+
+.sticky {
+    position: sticky;
+    background-color: lightblue;
+    width: 100px;
+    top: 0;
+    height: 100px;
+    left: 200px;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+.fixed {
+    position: fixed;
+    background-color: lightyellow;
+    width: 200px;
+    height: 50px;
+    top: 150px;
+    left: 600px;
+    border: 1px solid black;
+    z-index: 2;
+}
+
+.element {
+    text-decoration: none;
+    color: rgb(55, 55, 55);
+    font-size: large;
+}
+
+.element:hover {
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
 }
